@@ -3,7 +3,7 @@ const animals = [
     name: "Asian Tiger",
     genus: "Panthera",
     specific: "tigris tirgris",
-    location: ["India, Nepal, China"],
+    location: ["India", "Nepal", "China"],
     endangered: true,
   },
 
@@ -27,9 +27,20 @@ const animals = [
     genus: "Hystrix",
     specific: "cristata",
     location: ["Italy", "North Africa", "Sub-Saharan Africa"],
-    endangered: true,
+    endangered: false,
   },
 ];
-
+/* 
 animals.forEach((nam) => console.log(nam.name));
-animals.forEach((place) => place.forEach((land) => console.assert.log(land)));
+animals.forEach((place) => {
+  console.log(place.name);
+  place.location.forEach((land) => console.log(land));
+});
+ */
+animals.forEach((place) => {
+  console.log(place.name, "lives in");
+  place.location.forEach((land) => console.log(land));
+});
+
+const dead = animals.filter((num) => num.endangered === false);
+console.log(dead);
