@@ -30,6 +30,15 @@ const animals = [
     endangered: false,
   },
 ];
+
+animals.forEach((place) => {
+  console.log(place.name, "lives in");
+  place.location.forEach((land) => console.log(land));
+});
+
+const imal = animals.filter((alive) => alive.name.includes("i"));
+console.log(imal);
+
 /* 
 animals.forEach((nam) => console.log(nam.name));
 animals.forEach((place) => {
@@ -37,10 +46,11 @@ animals.forEach((place) => {
   place.location.forEach((land) => console.log(land));
 });
  */
-animals.forEach((place) => {
+/* animals.forEach((place) => {
   console.log(place.name, "lives in");
   place.location.forEach((land) => console.log(land));
 });
 
 const dead = animals.filter((num) => num.endangered === false);
 console.log(dead);
+ */
