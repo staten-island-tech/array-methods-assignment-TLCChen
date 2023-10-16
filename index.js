@@ -31,17 +31,17 @@ const animals = [
   },
 ];
 
-/* animals.forEach((place) => {
+animals.forEach((place) => {
   console.log(place.name, "lives in");
   place.location.forEach((land) => console.log(land));
 });
 
 const iAnimals = animals.filter((alive) => alive.name.includes("i"));
-console.log(iAnimals); */
+console.log(iAnimals);
 
-animals
+/* animals
   .filter((dead) => dead.endangered === false)
-  .forEach((num) => num.location.forEach((call) => console.log(call)));
+  .forEach((num) => num.location.forEach((call) => console.log(call))); */
 
 /* 
 animals.forEach((nam) => console.log(nam.name));
