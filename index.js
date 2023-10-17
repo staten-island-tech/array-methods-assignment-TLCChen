@@ -39,6 +39,10 @@ animals.forEach((place) => {
 const iAnimals = animals.filter((alive) => alive.name.includes("i"));
 console.log(iAnimals);
 
+const dead = animals
+  .filter((unalive) => unalive.endangered === false)
+  .forEach((place) => place.location.forEach((call) => console.log(call)));
+
 /* animals
   .filter((dead) => dead.endangered === false)
   .forEach((num) => num.location.forEach((call) => console.log(call))); */
